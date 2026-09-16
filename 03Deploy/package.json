@@ -1,0 +1,17 @@
+{
+  "name": "reactbasic",
+  "version": "1.0.0",
+  "description": "\"Learning React\"",
+  "license": "ISC",
+  "author": "\"Devesh Yadav\"",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
