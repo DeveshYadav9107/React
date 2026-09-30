@@ -1,0 +1,99 @@
+.app {
+	width: min(100% - 32px, 1000px);
+	margin: 0 auto;
+	padding: 36px 0;
+}
+
+.app-header {
+	margin-bottom: 28px;
+	text-align: center;
+}
+
+.app-header h1 {
+	margin: 0;
+	font-size: 2rem;
+}
+
+.search-controls {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 24px;
+}
+
+.search-controls input {
+	width: min(100%, 220px);
+	min-width: 0;
+	padding: 10px 12px;
+	border: 1px solid #c8ced6;
+	border-radius: 5px;
+	background: #fff;
+}
+
+.search-controls button {
+	padding: 10px 16px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	background: #2563a6;
+	cursor: pointer;
+}
+
+.search-controls button:hover {
+	background: #194d85;
+}
+
+.profile-error {
+	margin: 0 0 20px;
+	color: #a32929;
+	overflow-wrap: anywhere;
+}
+
+.profile-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+	gap: 16px;
+}
+
+.profile-card {
+	min-width: 0;
+	padding: 20px;
+	overflow: hidden;
+	border: 1px solid #dce1e7;
+	border-radius: 7px;
+	background: #fff;
+	text-align: center;
+}
+
+.profile-avatar {
+	width: 112px;
+	height: 112px;
+	max-width: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.profile-card h2 {
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	font-size: 1.1rem;
+}
+
+.profile-card a {
+	color: #1d5f9f;
+}
+
+@media (max-width: 480px) {
+	.app {
+		padding-top: 24px;
+	}
+
+	.search-controls {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.search-controls input {
+		width: 100%;
+	}
+}
